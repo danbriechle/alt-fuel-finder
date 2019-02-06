@@ -1,6 +1,6 @@
 <h1><%= @stations.count %> Closest Stations </h1>
 <% @stations.each do |station| %>
-<div class="stations-station.name"></div>
+<div class="stations-<%= station.name %>"></div>
 <h2>Name: <%= station.name %></h2>
 <li>Access Times: <%= station.access_times %></li>
 <li>Address: <%= station.address %></li>

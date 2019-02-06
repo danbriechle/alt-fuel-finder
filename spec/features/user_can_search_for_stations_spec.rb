@@ -10,7 +10,6 @@ feature "User visits root" do
     # And I click "Locate"
     expect(current_path).to eq(search_path)
     # Then I should be on page "/search"
-    save_and_open_page
     expect(page).to have_content("10 Closest Stations")
     within ".stations-UDR" do
       expect(page).to have_content("Name: UDR")
