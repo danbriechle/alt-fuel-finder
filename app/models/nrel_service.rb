@@ -4,6 +4,6 @@ class NrelService
       f.headers["X-Api-Key"] =  ENV['NREL_API_KEY']
       f.adapter Faraday.default_adapter
   end
-    @conn.get "/api/alt-fuel-stations/v1/nearest.json?location=#{zip}&limit=10"
+    @conn.get "/api/alt-fuel-stations/v1/nearest.json?location=#{zip}&fuel_type=ELEC,CNG&limit=10"
   end
 end
