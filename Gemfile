@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.1.4'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 gem 'sass-rails', '~> 5.0.6'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'uglifier', '>= 1.3.0'
@@ -26,5 +26,8 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'capybara'
+  gem 'pry'
+  gem 'rb-readline'
+  gem 'shoulda-matchers'
+  gem 'launchy'
 end
-
